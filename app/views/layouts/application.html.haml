@@ -9,10 +9,7 @@
 
   %body
     %h1.title Rotten Potatoes!
-    <%= button_to "Sign Up/Login", action: "new" %>
-// # => "<form method="post" action="/controller/new" class="button_to">
-// #     <input value="New" type="submit" />
-// #    </form>"
+    = button_to 'Sign up/Login', new_user_path
     #main
       - if flash[:notice]
         #notice.message= flash[:notice]
