@@ -25,7 +25,7 @@ class UsersController < ApplicationController
             redirect_to login_path
         end
         
-   end
+    end
     
     def new
     end
